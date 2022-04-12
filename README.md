@@ -3,5 +3,5 @@
 Todo List
 
 
-[ ] Create Website
-[ ] Add Media
+- [ ] Create Website
+- [ ] Add Media
