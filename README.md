@@ -8,3 +8,4 @@
 - [ ] Organize Pages
 - [ ] Add Credits
 - [ ] Start Homepage
+- [ ] Quiz Functionality

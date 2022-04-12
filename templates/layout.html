@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="icon" href="data:,">
+
+  <!-- jquery -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+  <script>
+    $(document).ready(function(){
+      $("#search").submit(function(event) {
+        event.preventDefault();
+        if ($("#searchbox").val().trim() == "") {
+          $("#searchbox").val("");
+          $("#searchbox").focus()
+        } else {
+          $.ajax({
+            success: function(result){
+                window.location.href = "/search_results/"+$("#searchbox").val();
+            },
+          });
+        }
+      });
+    })
+    
+  </script>
+
+
+    <title>Dwayne Johnson Films</title>
+  </head>
+  <body>
+    
+
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Drumhead_Coated_on_Snare_Drum.png" height="40" class="d-inline-block align-middle" alt="Drum Logo">
+      Drums
+    </a>
+    <div class="navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav nav-pills">
+        <a class="nav-link" href="/add">About</a>
+        <a class="nav-link" href="/add">Play</a>
+        <a class="nav-link" href="/add">Genres</a>
+        <a class="nav-link" href="/add">Test</a>
+      </div>
+    </div>
+    <form id="search" class="form-inline my-2 my-lg-0">
+      <input id="searchbox" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+    <div class="container">   
+        {% block content %}
+        {% endblock %}
+    </div>
+
+  </body>
+</html>
+
+
+
+

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'add_complete.js') }}"></script>
+
+<script>
+    let current_id = {{current_id}};
+</script>
+
+
+
+<div class="container">
+    <div id="movie_view">
+        
+    </div>
+</div>
+
+{% endblock %}
