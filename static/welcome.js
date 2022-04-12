@@ -107,7 +107,6 @@ function createbuffer(promise) {
 
 
 function finishedLoading() {
-  // Create two sources and play them both together.
   var quartertime = 60/tempo
   time= context.currentTime;
   for (i = 0; i < 10; i++) {
