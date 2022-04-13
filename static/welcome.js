@@ -18,6 +18,9 @@ function display_welcome(){
     $(tempoinput).val(tempo)
     $(tempoinput).appendTo($("#welcome_view"));
 
+    var startlearn = $("<a href='/learn/1' class='center btn btn-outline-warning'>Start Learning!</a>");
+    $(startlearn).appendTo($("#final"));
+
 }
 
 
@@ -38,9 +41,12 @@ function makeGrid(height) {
         
         var col2 = $("<div class='col-md-11'>");
         for (j = 0; j < height/4; j++) {
-            active[i*20+j]=0
+            
             var div = $("<div>");
             $(div).addClass("square");
+            if (active[i*20+j]==1){
+                $(div).addClass("square-2");
+            }
             $(div).attr("id",i*20+j);
             $(div).click(function() {
                 $(this).toggleClass('square-2');
@@ -62,10 +68,9 @@ function makeGrid(height) {
     
 };
 
-var active = new Array();
 var clapDecode;
 var audio = new Array();
-var tempo = 60
+var tempo = 300
 
 $(document).ready(function(){
     display_welcome();

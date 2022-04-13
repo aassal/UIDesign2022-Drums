@@ -6,6 +6,8 @@ app = Flask(__name__)
 
 current_id = 1
 
+active = [0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+
 learn_data = [
     {
     "id": "1",
@@ -85,7 +87,7 @@ quiz_data = [
 
 @app.route('/')
 def welcome():
-    return render_template('welcome.html')
+    return render_template('welcome.html', active=active)
 
 
 @app.route('/learn/<learn_id>', methods=['GET', 'POST'])
