@@ -110,7 +110,13 @@ input, textarea, .contentdiv {
 
 .center {
     display: block;
+    margin: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin: 10px;
-  }
+    width: 50%;
+    
+}
+
+.img100 {
+    width: 100%;
+}

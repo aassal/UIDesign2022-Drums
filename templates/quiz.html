@@ -5,7 +5,7 @@
 
 
 <script>
-    let learn = {{learn_id|tojson}};
+    let quiz = {{quiz_data|tojson}};
 </script>
 
 
@@ -15,10 +15,12 @@
     </div>
     <div class="center" id="yt2">
     </div>
+    <div class="center" id="answers">
+    </div>
     <div id="final">
     </div>
 </div>
 
-<script type="text/javascript" src="{{ url_for('static', filename = 'learn.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'quiz.js') }}"></script>
 
 {% endblock %}
