@@ -4,7 +4,7 @@ from flask import Response, request, jsonify
 app = Flask(__name__)
 
 
-current_id = 11
+current_id = 1
 
 learn_data = [
     {
@@ -90,7 +90,7 @@ def welcome():
 
 @app.route('/learn/<learn_id>', methods=['GET', 'POST'])
 def learn_term(learn_id):
-        return render_template('learn.html')  
+        return render_template('learn.html', learn_id=learn_data[int(learn_id)-1])  
 
 @app.route('/quiz/<view_id>')
 def quiz_term(quiz_id):

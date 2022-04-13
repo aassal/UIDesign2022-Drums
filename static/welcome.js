@@ -38,10 +38,10 @@ function makeGrid(height) {
         
         var col2 = $("<div class='col-md-11'>");
         for (j = 0; j < height/4; j++) {
-            active[i*10+j]=0
+            active[i*20+j]=0
             var div = $("<div>");
             $(div).addClass("square");
-            $(div).attr("id",i*10+j);
+            $(div).attr("id",i*20+j);
             $(div).click(function() {
                 $(this).toggleClass('square-2');
                 id=$(this).attr('id')
@@ -69,7 +69,7 @@ var tempo = 60
 
 $(document).ready(function(){
     display_welcome();
-    makeGrid(40);
+    makeGrid(80);
     context = new (window.AudioContext || window.webkitAudioContext)();
 
     requestAudio(0, '../static/Clap.ogg')
@@ -109,11 +109,11 @@ function createbuffer(promise) {
 function finishedLoading() {
   var quartertime = 60/tempo
   time= context.currentTime;
-  for (i = 0; i < 10; i++) {
+  for (i = 0; i < 20; i++) {
     var tmptime = time + (i)*quartertime;
-    for (j=0; j<40; j+=10){
+    for (j=0; j<80; j+=20){
         if (active[i+j]){
-            var source = createbuffer(audio[j/10])
+            var source = createbuffer(audio[j/20])
             source.connect(context.destination);
             source.start(tmptime);
         }

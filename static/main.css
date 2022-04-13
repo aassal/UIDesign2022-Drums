@@ -56,7 +56,7 @@ input, textarea, .contentdiv {
   
 
 .gold {
-    background-color: #FFD700;
+    color: #FFD700;
 }
 
 .edit {
@@ -90,7 +90,7 @@ input, textarea, .contentdiv {
 .square {
     float:left;
     position: relative;
-    width: 10%;
+    width: 5%;
     padding-bottom: 2.8125%;
     background-color:#1E1E1E;
     overflow:hidden;
