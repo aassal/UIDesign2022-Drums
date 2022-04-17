@@ -19,6 +19,8 @@ function display_quiz(){
 
     $(col1).append('<h6 class="gold">'+quiz["yttitle"]+'</h6>');
     $(col1).append(quiz["ytembed"]);
+    $(col1).append(quiz["audioembed"]);
+
 
     $(col1).appendTo($(row));
     
