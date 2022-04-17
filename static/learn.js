@@ -40,6 +40,8 @@ function display_learn(){
     } else {
         $('#yt2').append('<h6 class="gold">'+learn["yttitle"]+'</h6>');
         $('#yt2').append(learn["ytembed"]);
+        $('#yt2').append(learn["audioembed"]);
+
     }
 
     $(col2).appendTo($(row));
