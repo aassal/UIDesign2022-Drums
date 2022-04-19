@@ -114,6 +114,13 @@ function createbuffer(promise) {
 function finishedLoading() {
   var quartertime = 60/tempo
   time= context.currentTime;
+  $('#progressline').css("transition", "linear "+String(quartertime*20)+"s");
+  $('#progressline').addClass('playprogressalt');
+  setTimeout(function() { 
+    $('#progressline').css('transition', '');
+    $('#progressline').removeClass('playprogressalt');
+  },
+  quartertime*20*1000)
   for (i = 0; i < 20; i++) {
     var tmptime = time + (i)*quartertime;
     for (j=0; j<80; j+=20){

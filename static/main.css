@@ -91,7 +91,7 @@ input, textarea, .contentdiv {
     float:left;
     position: relative;
     width: 5%;
-    padding-bottom: 2.8125%;
+    padding-bottom: 3%;
     background-color:#1E1E1E;
     overflow:hidden;
     outline: 1px solid #FFFFFF;
@@ -119,4 +119,19 @@ input, textarea, .contentdiv {
 
 .img100 {
     width: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.playprogress {
+    border-left: 3px solid gold;
+    position: absolute;
+    height: 100%;
+    left: 9.5%;
+    z-index: 1000;
+}  
+.playprogressalt { 
+    left: 98.5%;
 }
