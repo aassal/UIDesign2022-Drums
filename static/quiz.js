@@ -37,12 +37,12 @@ function display_quiz(){
         questiondiv.appendTo(quizform);
     });
     
-    var submitbutton = $('<input id="submitbtn" class="center btn btn-outline-warning" type="submit" value="Submit Choice">')
+    var submitbutton = $('<input id="submitbtn" form="quiz" class="center btn btn-outline-warning" type="submit" value="Submit Choice">')
     if (quiz["prevans"]!="-1"){
         $(submitbutton).attr("disabled", true)
         display_answer({"submitted": quiz["prevans"], "correct": quiz["rightchoice"]})
     }
-    submitbutton.appendTo(quizform);
+    
     $(quizform).appendTo($(col2));
     $(col2).appendTo($(row));
     $(row).appendTo($("#welcome_view"));
@@ -51,6 +51,7 @@ function display_quiz(){
         var prevlearn = $("<a href='/quiz/"+(parseInt(quiz["id"])-1).toString()+"' class='center btn btn-outline-warning'>Previous Question!</a>");
         $(prevlearn).appendTo($("#final"));
     }
+    submitbutton.appendTo($("#final"));
     if (parseInt(quiz["id"])<5){
         var nextlearn = $("<a href='/quiz/"+(parseInt(quiz["id"])+1).toString()+"' class='center btn btn-outline-warning'>Next Question!</a>");
         $(nextlearn).appendTo($("#final"));

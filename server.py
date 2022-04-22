@@ -9,7 +9,7 @@ current_id = 1
 
 active = [0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 quiz_responses = [-1,-1,-1,-1,-1]
-correct_responses = [1,1,1,1,1]
+correct_responses = [1,2,1,3,0]
 
 learn_data = [
     {
@@ -107,7 +107,7 @@ quiz_data = [
     "yttitle": "Mystery Song...",
     "alt": "Drum Pattern",
     "audio": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2IBsC-V_4yWbxP6E-mZnylYRTYq2G1lp8_s2XMzHPxkWqmKHp",
-    "choices": ["Hip-Hop","Rock","Dance","Country"],
+    "choices": ["Hip-Hop","EDM","Dance","Country"],
     "prevans": "-1",
     "rightchoice": "1"
     },
@@ -119,9 +119,9 @@ quiz_data = [
     "yttitle": "Mystery Song...",
     "alt": "Drum Pattern",
     "audio": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2IBsC-V_4yWbxP6E-mZnylYRTYq2G1lp8_s2XMzHPxkWqmKHp",
-    "choices": ["Hip-Hop","Rock","Dance","Country"],
+    "choices": ["Rock","EDM","Dance","Country"],
     "prevans": "-1",
-    "rightchoice": "1"
+    "rightchoice": "2"
     },
     {
     "id": "3",
@@ -131,7 +131,7 @@ quiz_data = [
     "yttitle": "Mystery Song...",
     "alt": "Drum Pattern",
     "audio": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2IBsC-V_4yWbxP6E-mZnylYRTYq2G1lp8_s2XMzHPxkWqmKHp",
-    "choices": ["Hip-Hop","Rock","Dance","Country"],
+    "choices": ["Country","Hip-Hop","EDM","Rock"],
     "prevans": "-1",
     "rightchoice": "1"
     },
@@ -143,9 +143,9 @@ quiz_data = [
     "yttitle": "Mystery Song...",
     "alt": "Drum Pattern",
     "audio": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2IBsC-V_4yWbxP6E-mZnylYRTYq2G1lp8_s2XMzHPxkWqmKHp",
-    "choices": ["Hip-Hop","Rock","Dance","Country"],
+    "choices": ["Rock","Hip-Hop","Dance","Country"],
     "prevans": "-1",
-    "rightchoice": "1"
+    "rightchoice": "0"
     },
     {
     "id": "5",
@@ -155,9 +155,9 @@ quiz_data = [
     "yttitle": "Mystery Song...",
     "alt": "Drum Pattern",
     "audio": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2IBsC-V_4yWbxP6E-mZnylYRTYq2G1lp8_s2XMzHPxkWqmKHp",
-    "choices": ["Hip-Hop","Rock","Dance","Country"],
+    "choices": ["Rock","Hip-Hop","Country","Trap"],
     "prevans": "-1",
-    "rightchoice": "1"
+    "rightchoice": "3"
     },
     {
     "id": "end",
