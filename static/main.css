@@ -35,7 +35,7 @@ body {
 }
 
 input, textarea, .contentdiv {
-    background-color : #2c2c2c8e; 
+    background-color : gray; 
     color: white;
     border: 2px solid #12121252;
     box-shadow: 2px 2px 2px 2px #0e0d0d;
@@ -56,7 +56,7 @@ input, textarea, .contentdiv {
   
 
 .gold {
-    color: #FFD700;
+    color: greenyellow;
 }
 
 .edit {
@@ -116,6 +116,9 @@ input, textarea, .contentdiv {
     width: 50%;
     
 }
+.btn-group{
+    text-align: center;
+}
 
 .img100 {
     width: 100%;
@@ -126,7 +129,7 @@ input, textarea, .contentdiv {
 }
 
 .playprogress {
-    border-left: 3px solid gold;
+    border-left: 3px solid greenyellow;
     position: absolute;
     height: 100%;
     left: 9.5%;
@@ -134,4 +137,7 @@ input, textarea, .contentdiv {
 }  
 .playprogressalt { 
     left: 98.5%;
+}
+#tempo{
+    width: 80px;
 }
