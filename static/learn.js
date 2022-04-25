@@ -20,11 +20,11 @@ function display_learn(){
     
     if (learn["media"].length>0){
         if (learn["media"][0].length>0){
-            var leftimg = $("<img class='img100' src='"+learn["media"][0]+"'></img>")
+            var leftimg = $(learn["media"][0])
             leftimg.appendTo($(col1));
         }
         if (learn["media"][1].length>0){
-            var rightimg = $("<img class='img100' src='"+learn["media"][1]+"'></img>")
+            var rightimg = $(learn["media"][1])
             rightimg.appendTo($(col2));
         }
     }
