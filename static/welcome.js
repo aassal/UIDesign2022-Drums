@@ -10,15 +10,15 @@ function display_welcome(){
 
     var row = $("<div class='row'>");
     $(row).appendTo($("#welcome_view"));
-    var playbutton = $("<button>Play!</button>");
-    $(playbutton).click(finishedLoading);
-    $(playbutton).appendTo($("#welcome_view"));
+   
     $("#welcome_view").append("<br>Tempo: ")
     var tempoinput = $("<input id='tempo'>")
     $(tempoinput).val(tempo)
     $(tempoinput).appendTo($("#welcome_view"));
+    $("#welcome_view").append("<div><br></div>")
 
-    var startlearn = $("<a href='/learn/1' class='center btn btn-outline-warning'>Start Learning!</a>");
+
+    var startlearn = $("<a href='/learn/1' class='center btn gold'>Start Learning!</a>");
     $(startlearn).appendTo($("#final"));
 
 }
@@ -26,6 +26,7 @@ function display_welcome(){
 
 
 function makeGrid(height) {
+
     for (i=0;i<4;i++) {
         var row1 = $("<div class='row gridfont'>");
         var col1 = $("<div class='col-md-1 labels'>");
@@ -63,10 +64,14 @@ function makeGrid(height) {
         $(row1).append(col1);
         $(row1).append(col2);
         $('#info').append(row1);
-    }
-        
-    
+
+       
+    }  
 };
+
+var playbutton = $("<br><button class='gold btn btn-outline-light gold'>Play!</button>");
+$(playbutton).click(finishedLoading);
+$(playbutton).appendTo($("#final"));
 
 var clapDecode;
 var audio = new Array();
