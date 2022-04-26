@@ -28,8 +28,8 @@ function display_quiz(){
     var questiondiv = $("<div class='btn-group' role='group'>")
     $.each(quiz["choices"], function(i, question){
         
-        var choice = $('<input id="'+i+'" class="btn-check radiogold" type="radio" name="choices" value="'+i.toString()+'" autocomplete="off">')
-        var label = $('<label for="'+i.toString()+'" class="btn btn-outline-warning radiogold">'+question+'</label>')
+        var choice = $('<input id="'+i+'" class="btn-check" type="radio" name="choices" value="'+i.toString()+'" autocomplete="off">')
+        var label = $('<label for="'+i.toString()+'" class="gold btn btn-outline-light">'+question+'</label>')
         if (quiz["prevans"]==i.toString()){
             $(choice).attr("checked", true)
         }
