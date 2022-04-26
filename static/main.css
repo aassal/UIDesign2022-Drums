@@ -74,6 +74,21 @@ input, textarea {
     color: greenyellow;
 }
 
+.navgy {
+    color: greenyellow !important;
+    font-weight: bold;
+}
+
+.dropdown-menu { 
+    background-color: #1E1E1E;
+    color: white !important;
+}
+
+.dropdown-item { 
+    color: white;
+}
+
+
 .radiogold {
     color: greenyellow;
     border-color: greenyellow;

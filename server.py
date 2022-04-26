@@ -14,29 +14,6 @@ correct_responses = [1,2,1,0,3]
 learn_data = [
     {
     "id": "1",
-    "topic": "Song Analysis",
-    "media": ['<video width="100%" controls> <source src="../static/Dance 1_Trim.mp4" type="video/mp4"></video>'],
-    "rows": "0",
-    "ytembed": '<iframe width="100%" height="315" src="https://www.youtube.com/embed/dwDns8x3Jb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    "yttitle": "Mystery Song...",
-    "alt": "Drum Pattern",
-    "subheading": "Can you tell what genre this song is from just the drums?",
-    "body": ["Take a look at a this popular song's drums and analyze its beat. After identifying its characteristics, classification will be simple. At the end of the page, you can find the whole track!"]
-    },
-    {
-    "id": "2",
-    "topic": "Around the World - Daft Punk",
-    "media": ['<video width="100%" controls> <source src="../static/Dance 1_Trim.mp4" type="video/mp4"></video>'],
-    "rows": "0",
-    "ytembed": '<iframe width="100%" height="315" src="https://www.youtube.com/embed/dwDns8x3Jb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    "yttitle": "Mystery Song...",
-    "alt": "Drum Pattern",
-    "subheading": "Did you guess the genre correctly?",
-    "body-right": "",
-    "body": ["With the full track, is the genre easier to determine? Click on the genres tab to practice."]
-    },
-    {
-    "id": "3",
     "topic": "So What ARE Drum Patterns?",
     "media": ['<video width="100%" controls> <source src="../static/Dance 1_Trim.mp4" type="video/mp4"></video>'],
     "rows": "0",
@@ -49,7 +26,7 @@ learn_data = [
     "body": ["Drum patterns are, simply put, the ordering of different ‘hits’ (when a drum is played) on a grid. Drum patterns are a useful tool for electronic musicians when creating music. Drum patterns can also be simply the order different drums are heard or played. We teach drum patterns through visualizations and the audio accompanying them."]
     },
     {
-    "id": "4",
+    "id": "2",
     "topic": "Hip Hop and Trap",
     "media": ['<video width="100%" controls> <source src="../static/Hip Hop 1_Trim.mp4" type="video/mp4"></video>', '<video width="100%" controls> <source src="../static/Trap 1_Trim.mp4" type="video/mp4"></video>'],
     "rows": "1",
@@ -60,7 +37,7 @@ learn_data = [
     "body": ["Trap, although a subgenre of hip hop, is very different. Trap also utilizes hi hats, but instead features triplets and ‘rolls’ (when hi hats are playing in succession very quickly), but with infrequent kicks. A snare is used in a similar way to all hip hop. Trap music is usually quicker than hip hop, broadly. You can observe the pattern on the right side of the page.", "Hip Hop primarily utilizes the hi hats, with accompanying kicks to formulate their beat. A snare is often added on three, marking the end of a measure. Hip hop has a very distinctive bounce to it. You can observe the pattern on the left side of the page."],
     },
     {
-    "id": "5",
+    "id": "3",
     "topic": "Dance and Electric Dance Drums",
     "media": ['<video width="100%" controls> <source src="../static/Dance 1_Trim.mp4" type="video/mp4"></video>','<video width="100%" controls> <source src="../static/EDM 1_Trim.mp4" type="video/mp4"></video>'],
     "rows": "1",
@@ -71,7 +48,7 @@ learn_data = [
     "body": ["Vital to EDM (electronic dance music) is the kick drum on every beat; it feels like a fast heartbeat. EDM music is usually a little faster than Dance music, but the snare and hi hat are very similar. The most important distinction is the kick drum on every beat rather than every other.", "Dance music is often in a very simple kick-hihat-snare-hihat pattern, making the thump of the kick drum on every other beat. Dance music is quicker than hip hop. It is usually around 125 beat per minute (like a slow heart beat)."]
     },
     {
-    "id": "6",
+    "id": "4",
     "topic": "Rock Drums",
     "media": ['<video width="100%" controls> <source src="../static/Rock 1_Trim.mp4" type="video/mp4"></video>'],
     "rows": "0",
