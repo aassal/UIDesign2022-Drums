@@ -160,7 +160,7 @@ def learn_term(learn_id):
 def quiz_term(quiz_id):
     if request.method == "GET": 
         correct_no=0
-        if quiz_id == "end":
+        if quiz_id == "end" or quiz_id == "6":
             for i in range(len(correct_responses)):
                 if correct_responses[i]==quiz_responses[i]:
                     correct_no+=1
