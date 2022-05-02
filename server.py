@@ -28,7 +28,7 @@ learn_data = [
     {
     "id": "2",
     "topic": "Hip Hop and Trap",
-    "media": ['<video width="100%" controls> <source src="../static/Hip Hop 1_Trim.mp4" type="video/mp4"></video>', '<video width="100%" controls> <source src="../static/Trap 1_Trim.mp4" type="video/mp4"></video>'],
+    "media": ['<video width="100%" controls> <source src="../static/Trap 1_Trim.mp4" type="video/mp4"></video>', '<video width="100%" controls> <source src="../static/Hip Hop 1_Trim.mp4" type="video/mp4"></video>'],
     "rows": "1",
     "ytembed": '<iframe width="100%" height="315" src="https://www.youtube.com/embed/MHryuYVyHhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     "yttitle": "Example of a Trap song at 120 bpm:",
@@ -39,7 +39,7 @@ learn_data = [
     {
     "id": "3",
     "topic": "Dance and Electric Dance Drums",
-    "media": ['<video width="100%" controls> <source src="../static/Dance 1_Trim.mp4" type="video/mp4"></video>','<video width="100%" controls> <source src="../static/EDM 1_Trim.mp4" type="video/mp4"></video>'],
+    "media": ['<video width="100%" controls> <source src="../static/EDM 1_Trim.mp4" type="video/mp4"></video>','<video width="100%" controls> <source src="../static/Dance 1_Trim.mp4" type="video/mp4"></video>'],
     "rows": "1",
     "ytembed": '<iframe width="100%" height="315" src="https://www.youtube.com/embed/KQ6zr6kCPj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     "yttitle": "Example of a Dance song at 130 bpm:",
