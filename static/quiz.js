@@ -38,7 +38,7 @@ function display_quiz(){
         questiondiv.appendTo(quizform);
     });
     
-    var submitbutton = $('<input id="submitbtn" form="quiz" class="center gold btn " type="submit" value="Submit Choice">')
+    var submitbutton = $('<input id="submitbtn" form="quiz" class="center gold btn btn-border" type="submit" value="Submit Choice">')
     if (quiz["prevans"]!="-1"){
         $(submitbutton).attr("disabled", true)
         display_answer({"submitted": quiz["prevans"], "correct": quiz["rightchoice"]})
@@ -60,7 +60,7 @@ function display_quiz(){
         $(nextlearn).appendTo($(btngroup));
         $(btngroup).appendTo($("#final"));
     } else {
-        var nextlearn = $("<a href='/quiz/end' class='center btn btn-outline-warning'>Submit Quiz!</a>");
+        var nextlearn = $("<a href='/quiz/end' class='center btn btn-outline gold btn-border'>Submit Quiz!</a>");
         
         $(nextlearn).appendTo($("#final"));
     }
@@ -72,7 +72,7 @@ function display_end(){
     title.append("You got "+quiz["correct"]+"/5 questions right!")
     title.appendTo($("#welcome_view"));
 
-    var review = $("<a href='/learn/1' class='center btn btn-outline-warning'>Review Again!</a>");
+    var review = $("<a href='/learn/1' class='center btn gold btn-border'>Review Again!</a>");
     $(review).appendTo($("#final"));
 
 }

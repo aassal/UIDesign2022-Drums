@@ -141,3 +141,9 @@ input, textarea, .contentdiv {
 #tempo{
     width: 80px;
 }
+
+.btn-border{
+    border: 2px solid greenyellow;
+    border-radius: 8px;
+    width: fit-content;
+}

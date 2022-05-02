@@ -18,7 +18,7 @@ function display_welcome(){
     $("#welcome_view").append("<div><br></div>")
 
 
-    var startlearn = $("<a href='/learn/1' class='center btn gold'>Start Learning!</a>");
+    var startlearn = $("<a href='/learn/1' class='center btn gold btn-border'>Start Learning!</a>");
     $(startlearn).appendTo($("#final"));
 
 }
@@ -69,7 +69,7 @@ function makeGrid(height) {
     }  
 };
 
-var playbutton = $("<br><button class='gold btn btn-outline-light gold'>Play!</button>");
+var playbutton = $("<br><button class='gold btn btn-border'>Play!</button>");
 $(playbutton).click(finishedLoading);
 $(playbutton).appendTo($("#final"));
 

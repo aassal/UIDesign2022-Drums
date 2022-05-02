@@ -61,7 +61,7 @@ function display_learn(){
         $(nextlearn).appendTo($(btngroup));
         $(btngroup).appendTo($("#final"));
     } else {
-        var nextlearn = $("<a href='/quiz/1' class='center btn btn-outline gold'>Start Quiz!</a>");
+        var nextlearn = $("<a href='/quiz/1' class='center btn btn-border gold'>Start Quiz!</a>");
         $(nextlearn).appendTo($("#final"));
     }
 }
