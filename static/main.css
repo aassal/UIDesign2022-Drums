@@ -177,12 +177,12 @@ input, textarea {
     width: 80px;
 }
 
-<<<<<<< HEAD
 .btn-border{
     border: 2px solid greenyellow;
     border-radius: 8px;
     width: fit-content;
-=======
+}
+
 .description { 
     display: flex;
     font-weight:bold;
@@ -190,5 +190,4 @@ input, textarea {
     text-align: center;
     justify-content: center;
     height: 100%;
->>>>>>> 630c37ad7234930d900692c43913ce36878ea674
 }
