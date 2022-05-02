@@ -69,7 +69,11 @@ function makeGrid(height) {
     }  
 };
 
+<<<<<<< HEAD
 var playbutton = $("<br><button class='gold btn btn-border'>Play!</button>");
+=======
+var playbutton = $("<br><button class='gold btn btn-outline-light'>Play!</button>");
+>>>>>>> 630c37ad7234930d900692c43913ce36878ea674
 $(playbutton).click(finishedLoading);
 $(playbutton).appendTo($("#final"));
 
