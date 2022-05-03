@@ -129,14 +129,14 @@ input, textarea {
     padding-bottom: 3%;
     background-color:#1E1E1E;
     overflow:hidden;
-    outline: 1px solid #FFFFFF;
+    outline: 1px solid greenyellow;
 }
 
 .labels {
     padding: 0px;
     margin: 0px;
     background-color:#1E1E1E;
-    outline: 1px solid #FFFFFF;
+    outline: 1px solid greenyellow;
 }
 
 .square-2 {
