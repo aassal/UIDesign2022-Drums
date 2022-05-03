@@ -25,7 +25,7 @@ function display_quiz(){
     $(col1).appendTo($(row));
     
     var quizform = $("<form id='quiz'>")
-    var questiondiv = $("<div class='btn-group' role='group'>")
+    var questiondiv = $("<div class='btn-group-vertical' role='group'>")
     $.each(quiz["choices"], function(i, question){
         
         var choice = $('<input id="'+i+'" class="btn-check" type="radio" name="choices" value="'+i.toString()+'" autocomplete="off">')
