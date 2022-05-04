@@ -7,13 +7,13 @@ function display_quiz(){
     }
     
     var title = $("<h1 class='gold'>")
-    title.append(quiz["question"])
+    title.append(quiz["header"])
 
     var row = $("<div class='row'>");
     var col1 = $("<div class='col-md-8 noborder'>");
     var col2 = $("<div class='col-md-4 noborder'>");
     var div1 = $("<div class='contentdiv'>");
-    var div2 = $("<div class='contentdiv description'>");
+    var div2 = $("<div class='contentdiv quizform'>");
     
 
  
@@ -37,6 +37,9 @@ function display_quiz(){
         label.appendTo(questiondiv);
         
     });
+    var title = $("<h6 class='gold'>")
+    title.append(quiz["question"])
+    title.appendTo(quizform);
     questiondiv.appendTo(quizform);
     
     

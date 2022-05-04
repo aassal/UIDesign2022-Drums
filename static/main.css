@@ -192,6 +192,14 @@ input, textarea {
     height: 100%;
 }
 
+.quizform { 
+    font-weight:bold;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
 .learnrows {
     padding: 15px
 }
