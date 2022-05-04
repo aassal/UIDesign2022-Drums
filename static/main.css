@@ -191,3 +191,7 @@ input, textarea {
     justify-content: center;
     height: 100%;
 }
+
+.learnrows {
+    padding: 15px
+}

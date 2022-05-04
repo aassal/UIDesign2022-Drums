@@ -11,7 +11,7 @@ function display_learn(){
     
 
     for (let i = 0; i <= parseInt(learn["rows"]); i++) {
-        var row = $("<div class='row'>");
+        var row = $("<div class='row learnrows'>");
         var col1 = $("<div class='col-md-5 noborder'>");
         var col2 = $("<div class='col-md-7 noborder'>");
         var div1 = $("<div class='contentdiv'>");
