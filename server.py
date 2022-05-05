@@ -28,24 +28,24 @@ learn_data = [
     {
     "id": "2",
     "topic": "Hip Hop and Trap",
-    "media": ['<video width="100%" controls> <source src="../static/Trap 1_Trim.mp4" type="video/mp4"></video>', '<video width="100%" controls> <source src="../static/Hip Hop 1_Trim.mp4" type="video/mp4"></video>'],
+    "media": ['<video width="100%" controls> <source src="../static/Hip Hop 1_Trim.mp4" type="video/mp4"></video>', '<video width="100%" controls> <source src="../static/Trap 1_Trim.mp4" type="video/mp4"></video>'],
     "rows": "1",
     "ytembed": '<iframe width="100%" height="315" src="https://www.youtube.com/embed/MHryuYVyHhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     "yttitle": "Example of a Trap song at 120 bpm:",
     "alt": "Drum Pattern",
     "subheading": "Let's Differentiate Them!",
-    "body": ["Trap, although a subgenre of hip hop, is very different. Trap also utilizes hi hats, but instead features triplets and ‘rolls’ (when hi hats are playing in succession very quickly), but with infrequent kicks. A snare is used in a similar way to all hip hop. Trap music is usually quicker than hip hop, broadly. You can observe the pattern on the right side of the page.", "Hip Hop primarily utilizes the hi hats, with accompanying kicks to formulate their beat. A snare is often added on three, marking the end of a measure. Hip hop has a very distinctive bounce to it. You can observe the pattern on the left side of the page."],
+    "body": ["Hip Hop primarily utilizes the hi hats, with accompanying kicks to formulate their beat. A snare is often added on three, marking the end of a measure. Hip hop has a very distinctive bounce to it. You can observe the pattern on the left side of the page.", "Trap, although a subgenre of hip hop, is very different. Trap also utilizes hi hats, but instead features triplets and ‘rolls’ (when hi hats are playing in succession very quickly), but with infrequent kicks. A snare is used in a similar way to all hip hop. Trap music is usually quicker than hip hop, broadly. You can observe the pattern on the right side of the page."],
     },
     {
     "id": "3",
     "topic": "Dance and Electric Dance Drums",
-    "media": ['<video width="100%" controls> <source src="../static/EDM 1_Trim.mp4" type="video/mp4"></video>','<video width="100%" controls> <source src="../static/Dance 1_Trim.mp4" type="video/mp4"></video>'],
+    "media": ['<video width="100%" controls> <source src="../static/Dance 1_Trim.mp4" type="video/mp4"></video>', '<video width="100%" controls> <source src="../static/EDM 1_Trim.mp4" type="video/mp4"></video>'],
     "rows": "1",
     "ytembed": '<iframe width="100%" height="315" src="https://www.youtube.com/embed/KQ6zr6kCPj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     "yttitle": "Example of a Dance song at 130 bpm:",
     "alt": "Drum Pattern",
     "subheading": "Let's Differentiate Them!",
-    "body": ["Vital to EDM (electronic dance music) is the kick drum on every beat; it feels like a fast heartbeat. EDM music is usually a little faster than Dance music, but the snare and hi hat are very similar. The most important distinction is the kick drum on every beat rather than every other.", "Dance music is often in a very simple kick-hihat-snare-hihat pattern, making the thump of the kick drum on every other beat. Dance music is quicker than hip hop. It is usually around 125 beat per minute (like a slow heart beat)."]
+    "body": ["Dance music is often in a very simple kick-hihat-snare-hihat pattern, making the thump of the kick drum on every other beat. Dance music is quicker than hip hop. It is usually around 125 beat per minute (like a slow heart beat).", "Vital to EDM (electronic dance music) is the kick drum on every beat; it feels like a fast heartbeat. EDM music is usually a little faster than Dance music, but the snare and hi hat are very similar. The most important distinction is the kick drum on every beat rather than every other."]
     },
     {
     "id": "4",
