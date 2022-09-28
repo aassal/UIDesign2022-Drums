@@ -34,13 +34,28 @@ body {
     color: white;
 }
 
-input, textarea, .contentdiv {
-    background-color : gray; 
+input, textarea {
+    background-color : rgba(169, 169, 169, 0.116);
     color: white;
     border: 2px solid #12121252;
-    box-shadow: 2px 2px 2px 2px #0e0d0d;
-  
+    box-shadow: 2px 2px 2px 2px #0e0d0d;  
 }
+
+.contentdiv {
+    height: 100%;
+    background-color : rgba(169, 169, 169, 0.116);
+    color: white;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid #12121252;
+    box-shadow: 2px 2px 2px 2px #0e0d0d;  
+}
+
+.noborder {
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
 
 .welcomediv {
     background-color : #2c2c2c8e; 
@@ -57,6 +72,26 @@ input, textarea, .contentdiv {
 
 .gold {
     color: greenyellow;
+}
+
+.navgy {
+    color: greenyellow !important;
+    font-weight: bold;
+}
+
+.dropdown-menu { 
+    background-color: #1E1E1E;
+    color: white !important;
+}
+
+.dropdown-item { 
+    color: white;
+}
+
+
+.radiogold {
+    color: greenyellow;
+    border-color: greenyellow;
 }
 
 .edit {
@@ -94,14 +129,14 @@ input, textarea, .contentdiv {
     padding-bottom: 3%;
     background-color:#1E1E1E;
     overflow:hidden;
-    outline: 1px solid #FFFFFF;
+    outline: 1px solid greenyellow;
 }
 
 .labels {
     padding: 0px;
     margin: 0px;
     background-color:#1E1E1E;
-    outline: 1px solid #FFFFFF;
+    outline: 1px solid greenyellow;
 }
 
 .square-2 {
@@ -132,12 +167,39 @@ input, textarea, .contentdiv {
     border-left: 3px solid greenyellow;
     position: absolute;
     height: 100%;
-    left: 9.5%;
+    left: 9%;
     z-index: 1000;
 }  
 .playprogressalt { 
-    left: 98.5%;
+    left: 99%;
 }
 #tempo{
     width: 80px;
+}
+
+.btn-border{
+    border: 2px solid greenyellow;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.description { 
+    display: flex;
+    font-weight:bold;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.quizform { 
+    font-weight:bold;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.learnrows {
+    padding: 15px
 }

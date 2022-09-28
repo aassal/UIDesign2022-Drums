@@ -7,47 +7,54 @@ function display_quiz(){
     }
     
     var title = $("<h1 class='gold'>")
-    title.append(quiz["question"])
+    title.append(quiz["header"])
 
     var row = $("<div class='row'>");
-    var col1 = $("<div class='col-md-6 contentdiv'>");
-    var col2 = $("<div class='col-md-6 contentdiv'>");
-    var btngroup = $("<div class='center btn-group'></div>");
+    var col1 = $("<div class='col-md-8 noborder'>");
+    var col2 = $("<div class='col-md-4 noborder'>");
+    var div1 = $("<div class='contentdiv'>");
+    var div2 = $("<div class='contentdiv quizform'>");
+    
 
  
     title.appendTo($("#welcome_view"));
 
+    $(div1).append(quiz["audioembed"]);
 
-    $(col1).append('<h6 class="gold">'+quiz["yttitle"]+'</h6>');
-    $(col1).append(quiz["ytembed"]);
-    $(col1).append(quiz["audioembed"]);
-
-
+    $(div1).appendTo($(col1));
     $(col1).appendTo($(row));
     
-    var quizform = $("<form id='quiz' class='contentdiv'>")
+    var quizform = $("<form id='quiz'>")
+    var questiondiv = $("<div class='btn-group-vertical' role='group'>")
     $.each(quiz["choices"], function(i, question){
-        var questiondiv = $("<div>")
-        var choice = $('<input type="radio" id="'+i+'" name="choices" value="'+i.toString()+'">')
-        var label = $('<label for="'+i.toString()+'">'+question+'</label>')
+        
+        var choice = $('<input id="'+i+'" class="btn-check" type="radio" name="choices" value="'+i.toString()+'" autocomplete="off">')
+        var label = $('<label for="'+i.toString()+'" class="gold btn btn-outline-light">'+question+'</label>')
         if (quiz["prevans"]==i.toString()){
             $(choice).attr("checked", true)
         }
         choice.appendTo(questiondiv);
         label.appendTo(questiondiv);
-        questiondiv.appendTo(quizform);
+        
     });
+    var title = $("<h6 class='gold'>")
+    title.append(quiz["question"])
+    title.appendTo(quizform);
+    questiondiv.appendTo(quizform);
     
-    var submitbutton = $('<input id="submitbtn" form="quiz" class="center gold btn " type="submit" value="Submit Choice">')
+    
+    var submitbutton = $('<input id="submitbtn" form="quiz" class="center gold btn btn-border" type="submit" value="Submit Choice">')
     if (quiz["prevans"]!="-1"){
         $(submitbutton).attr("disabled", true)
         display_answer({"submitted": quiz["prevans"], "correct": quiz["rightchoice"]})
     }
     
-    $(quizform).appendTo($(col2));
+    $(quizform).appendTo($(div2));
+    $(div2).appendTo($(col2));
     $(col2).appendTo($(row));
     $(row).appendTo($("#welcome_view"));
 
+    var btngroup = $("<div class='center btn-group'></div>");
     if (parseInt(quiz["id"])>1){
         var prevlearn = $("<a href='/quiz/"+(parseInt(quiz["id"])-1).toString()+"' class='btn gold'><svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='greenyellow' class='bi bi-arrow-left-square-fill' viewBox='0 0 16 16'> <path d='M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z'/></svg></a>");
         $(prevlearn).appendTo($(btngroup));
@@ -60,7 +67,7 @@ function display_quiz(){
         $(nextlearn).appendTo($(btngroup));
         $(btngroup).appendTo($("#final"));
     } else {
-        var nextlearn = $("<a href='/quiz/end' class='center btn btn-outline-warning'>Submit Quiz!</a>");
+        var nextlearn = $("<a href='/quiz/end' class='center btn btn-outline gold btn-border'>Submit Quiz!</a>");
         
         $(nextlearn).appendTo($("#final"));
     }
@@ -72,7 +79,7 @@ function display_end(){
     title.append("You got "+quiz["correct"]+"/5 questions right!")
     title.appendTo($("#welcome_view"));
 
-    var review = $("<a href='/learn/1' class='center btn btn-outline-warning'>Review Again!</a>");
+    var review = $("<a href='/learn/1' class='center btn gold btn-border'>Review Again!</a>");
     $(review).appendTo($("#final"));
 
 }
